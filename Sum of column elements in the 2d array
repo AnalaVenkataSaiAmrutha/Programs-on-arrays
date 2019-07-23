@@ -1,4 +1,4 @@
-/*Sum of row elements in 2d array */
+/*Sum of column elements in 2d array */
 #include<stdio.h>
 int main()
 {
