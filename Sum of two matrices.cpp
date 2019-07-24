@@ -1,0 +1,35 @@
+/* Addition of two matrices */
+#include<stdio.h>
+int main()
+{
+	int a[10][10],b[10][10],s[10][10],i,j,r,c;
+	printf("Enter no rows and no cols\n");
+	scanf("%d%d",&r,&c);
+	printf("Enter 1st matrix elements\n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+			scanf("%d",&a[i][j]);
+	}
+	printf("Enter 2nd matrix elements\n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		    scanf("%d",&b[i][j]);
+	}
+	printf("Product of given matrices is\n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			s[i][j]=a[i][j]+b[i][j];
+		}
+	}
+	for(i=0;i<r;i++)
+	{
+		 for(j=0;j<c;j++)
+		   printf("%d ",s[i][j]);
+		   printf("\n");
+	}
+	return 0;
+}
