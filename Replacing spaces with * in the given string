@@ -1,3 +1,4 @@
+/*Print * in place of spaces present in the string */
 #include<stdio.h>
 int main()
 {
