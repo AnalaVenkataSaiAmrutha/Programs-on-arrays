@@ -1,3 +1,5 @@
+/*Cancadination of strings without using strcat() */
+
 #include<stdio.h>
 int main()
 {
