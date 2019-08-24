@@ -14,9 +14,9 @@ int main()
 		i++;
 	}
 	if(cnt==0)
-	printf("Equal");
+	printf("Strings are equal");
 	else
-	printf("Not Equal");
+	printf("Strings are not equal");
 	
 	return 0;
 }
