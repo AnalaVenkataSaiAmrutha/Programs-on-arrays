@@ -1,0 +1,37 @@
+
+/*Eliminating the duplicate elements in the given array */
+
+#include<stdio.h>
+ 
+int main() 
+{
+   int array[50], i, size;
+ 
+   scanf("%d", &size); /*Accepts the size of array from test case data */
+
+   for (i = 0; i < size; i++)
+   scanf("%d", &array[i]); /* Read the array elements from the test case data */
+int j,count=0;
+
+for(i=0;i<size;i++)
+{
+ 
+    for(j=0;j<count;j++)
+    {
+      
+       if(array[i]==array[j])
+       break;
+    }
+  
+   if(j==count)
+   {
+     array[j]=array[i];
+     count++;
+   }
+}
+size=count;
+for (i = 0; i < size; i++) {
+      printf("%d\n", array[i]);
+   }
+return 0;
+}
